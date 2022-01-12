@@ -1,0 +1,30 @@
+struct Distance {
+    var meter: Double
+    var kiloMeter: Double
+    var centiMeter: Double
+    
+    init(meter: Double) {
+        self.meter = meter
+        kiloMeter = meter/1000
+        centiMeter = meter*100
+}
+    init(centiMeter: Double) {
+        self.centiMeter = centiMeter
+        meter = centiMeter/100
+        kiloMeter = centiMeter/100000
+  }
+    init(kiloMeter: Double){
+        self.kiloMeter = kiloMeter
+        centiMeter = kiloMeter*100000
+        meter = kiloMeter/1000
+    }
+}
+
+
+let distanceInMeter = Distance(centiMeter: 300)
+let distanceInCentiMeter = Distance(kiloMeter: 1)
+let distanceInKiloMeter = Distance(meter: 10000)
+
+print(distanceInCentiMeter.centiMeter)
+print(distanceInMeter.meter)
+print(distanceInKiloMeter.kiloMeter)
