@@ -1,0 +1,3 @@
+let inningOne = 234
+let inningTwo = 160
+print("Score in innings one is\(inningOne) and second inning score is\(inningTwo) and total score is \(inningTwo+inningOne)")
