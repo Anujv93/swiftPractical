@@ -1,0 +1,7 @@
+let firstName = "Anuj"
+let lastName = " Vyas"
+var fullName = firstName+lastName
+print(fullName)
+var intro = "My full name is "
+intro += fullName
+print(intro)
