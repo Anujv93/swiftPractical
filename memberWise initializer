@@ -1,0 +1,9 @@
+struct studentInfo {
+    var name:String
+    var section: String
+    var enrollNo:String
+}
+let student1 = studentInfo(name:"Anuj Vyas",section:"L MA",enrollNo:"579")
+print(student1.name)
+print(student1.section)
+print(student1.enrollNo)
