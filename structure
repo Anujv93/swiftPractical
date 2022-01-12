@@ -1,0 +1,9 @@
+struct BookInfo {
+    let name:String
+    let author:String
+    let pages:Int
+ }
+    let book = BookInfo(name:"Tools Of Titans",author:"Tim Ferriss",pages:"650")
+    print(book.name)
+    print(book.author)
+    print(book.pages)
