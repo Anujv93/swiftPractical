@@ -1,0 +1,28 @@
+class Area{
+    var area :Double
+    
+    init(){
+        area = 0.0
+    }
+    
+    func areaRect(length l: Double ,breadth b:Double){
+        area = l*b
+        print("Are of rectangle is \(area)")
+    }
+    
+    func areaSquare(side s:Double){
+        area = s*s
+        print("Area of square is \(area)")
+    }
+    
+    func areaCircle(radius r: Double){
+        area = 3.14*r*r
+        print("Area of circle is \(area)")
+    }
+}
+
+let area = Area()
+
+area.areaRect(length : 20.3,breadth:10)
+area.areaSquare(side: 53.4)
+area.areaCircle(radius: 89.2)
