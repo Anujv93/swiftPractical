@@ -1,0 +1,22 @@
+struct Salary{
+    
+    var NewSalary : Double
+    init(){
+        NewSalary = 0.0
+    }
+    
+    mutating func IncrementByTen(baseSalary : Double){
+        NewSalary = baseSalary + (baseSalary*0.1)
+        print("Salary After 10% increment is \(NewSalary)")
+    }
+    
+    mutating func IncrementByTwenty(baseSalary : Double){
+        NewSalary = baseSalary + (baseSalary*0.2)
+        print("Salary After 20% increment is \(NewSalary)")
+    }
+}
+
+var increment = Salary()
+
+increment.IncrementByTen(baseSalary : 200000)
+increment.IncrementByTwenty(baseSalary : 200000)
