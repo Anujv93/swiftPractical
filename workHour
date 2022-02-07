@@ -1,0 +1,15 @@
+struct WorkHour{
+    var StartWorkHour : Int
+    var EndWorkHour : Int
+    var StartWorkMin : Int
+    var EndWorkMin : Int
+    
+    var calculateWorkhour : String{
+        let _workedHour = EndWorkHour - StartWorkHour
+        let _workedMin = EndWorkMin - StartWorkMin
+        return ("Worked Hour is \(_workedHour):\(_workedMin)")
+    }
+}
+
+let calculate = WorkHour(StartWorkHour:09,EndWorkHour:16,StartWorkMin:00,EndWorkMin:30)
+print(calculate.calculateWorkhour)
