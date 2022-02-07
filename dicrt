@@ -1,0 +1,6 @@
+let marks = ["English":80,"Maths":70,"CS":95,"Chemistry":92,"Physics":90]
+var total : Int
+var mark = marks["English"]
+print("Marks in english is \(mark!)")
+
+
