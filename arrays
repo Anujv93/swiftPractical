@@ -1,0 +1,11 @@
+var subjects = ["Swift","DLCD","Maths","ICSE"]
+print("Array without any change \(subjects)")
+subjects.insert("C Language" ,at:2)
+subjects.insert("Data Structure and Algorithm" ,at:1)
+print("New Subjects List: \(subjects)")
+subjects.removeLast()
+print("Subjects List After removing last from the array is \(subjects)")
+subjects.remove(at:3)
+print("Subjects List After removing 4th from the array is \(subjects)")
+subjects.removeAll()
+print("Subjects List After removing all elementss from the array is \(subjects)")
