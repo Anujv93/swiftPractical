@@ -1,0 +1,14 @@
+var subject = ["Maths","English","Hindi","Computer Science"]
+subject.append("Chemistry")
+print(subject)
+
+if subject.contains("Chemistry")
+{
+    print("Chemistry is in your syllabus")
+}
+else
+{
+    print("Chemistry is not in your syllabus")
+}
+subject.insert("Physics" ,at:2)
+print(subject)
